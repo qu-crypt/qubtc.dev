@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quBTC - The Power Wallet for Bitcoin</title>
+  <meta name="description" content="The Power Wallet for Bitcoin. Coming soon to iOS.">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 440px;
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 2.75rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      margin-bottom: 2rem;
+    }
+
+    .logo .btc {
+      color: #F7931A;
+    }
+
+    .tagline {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.75rem;
+    }
+
+    .sub {
+      font-size: 0.75rem;
+      color: #444;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+    }
+
+    .notify {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .notify input[type="email"] {
+      background: #0d0d0d;
+      border: 1px solid #1f1f1f;
+      color: #fff;
+      padding: 0.7rem 1rem;
+      font-size: 0.9rem;
+      border-radius: 7px;
+      width: 220px;
+      outline: none;
+      font-family: inherit;
+      transition: border-color 0.15s;
+    }
+
+    .notify input[type="email"]::placeholder {
+      color: #333;
+    }
+
+    .notify input[type="email"]:focus {
+      border-color: #F7931A;
+    }
+
+    .notify button {
+      background: #F7931A;
+      color: #000;
+      border: none;
+      padding: 0.7rem 1.1rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 7px;
+      cursor: default;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 400px) {
+      .notify {
+        flex-direction: column;
+      }
+
+      .notify input[type="email"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">qu<span class="btc">BTC</span></div>
+    <p class="tagline">The Power Wallet<br>for Bitcoin.</p>
+    <p class="sub">Coming to iOS</p>
+  </div>
+</body>
+</html>
